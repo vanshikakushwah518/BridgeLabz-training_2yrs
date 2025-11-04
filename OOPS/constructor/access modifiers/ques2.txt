@@ -1,0 +1,39 @@
+class Course {
+    String courseName;         // Instance variable
+    int duration;              // in hours
+    double fee;                // Instance variable
+    static String instituteName = "ABC Institute"; // Class variable
+
+    // Constructor
+    Course(String courseName, int duration, double fee) {
+        this.courseName = courseName;
+        this.duration = duration;
+        this.fee = fee;
+    }
+
+    // Instance method
+    void displayCourseDetails() {
+        System.out.println("Course Name: " + courseName);
+        System.out.println("Duration: " + duration + " hours");
+        System.out.println("Fee: ₹" + fee);
+        System.out.println("Institute: " + instituteName);
+    }
+
+    // Class method
+    static void updateInstituteName(String name) {
+        instituteName = name;
+    }
+
+    public static void main(String[] args) {
+        Course c1 = new Course("Java Programming", 40, 5000);
+        Course c2 = new Course("Python Programming", 35, 4500);
+        
+        c1.displayCourseDetails();
+        c2.displayCourseDetails();
+
+        Course.updateInstituteName("XYZ Academy"); // Update for all courses
+        System.out.println("\nAfter Updating Institute Name:");
+        c1.displayCourseDetails();
+        c2.displayCourseDetails();
+    }
+}
