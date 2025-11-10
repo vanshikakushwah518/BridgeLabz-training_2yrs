@@ -1,6 +1,6 @@
 # 🚀 Bridgelabz Java Training — 2415500502 
 ### 🧠 Java Learning Journey Log  
-**Student Name:** Vanshika  
+**Student Name:** Vanshika Kushwah 
 **University Roll No.:** 2415500502  
 **Program:** B.Tech (AIML)  
 **Training Platform:** Bridgelabz  
